@@ -1,6 +1,6 @@
 # code-future
 
-#### Projeto com o objetivo de apresentar um sistema full stack, através de um bootcamp.
+#### O objetivo desse projeto é de apresentar sistemas front alinhados com back-end para o desenvolvimento de novas soluções para o futuro!
 
 
 ## Back-end development system.
