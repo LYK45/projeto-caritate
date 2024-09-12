@@ -1,8 +1,8 @@
-# code-future
+# Projeto Caritate!
 
-#### O objetivo desse projeto é de apresentar sistemas front alinhados com back-end para o desenvolvimento de novas soluções para o futuro!
+#### Github temporário para começarmos os trbalahos até o professor criar o oficial!
 
 
-## Back-end development system.
+## Galera, segue o material para pesquisarem e se informarem melhor na hora da contrução das páginas:  
 
 #### O projeto inicialmente fora produzido utilizando linguagem C-sharp.
