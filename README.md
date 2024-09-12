@@ -7,7 +7,7 @@
 
 #### Instagram: [@caritatebh](https://www.instagram.com/caritatebh?igsh=MWFsMnoxaWx4OWxqOQ==)
 #### Formulário para virar voluntário: [https://forms.gle/LU1XhQojB77sKzZN7](https://forms.gle/LU1XhQojB77sKzZN7)
-#### Website a ser modificado: https://themewagon.github.io/BabyCare/index.html
+#### Website a ser modificado: [https://themewagon.github.io/BabyCare/index.html](https://themewagon.com/themes/babycare/)
 #### Website que ela achou interessante e pode servir de inspiração: https://manodown.com.br/
 #### Cartilha com informações:
 [MANUAL DO VOLUNTARIADO.pdf](https://github.com/user-attachments/files/16981940/MANUAL.DO.VOLUNTARIADO.pdf)
