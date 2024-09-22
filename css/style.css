@@ -229,7 +229,7 @@ h6,
 /*** Hero Header ***/
 .hero-header,
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url(../img/hero-img.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url(../img/Caritate.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -365,6 +365,7 @@ h6,
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /*** About End ***/
 
 

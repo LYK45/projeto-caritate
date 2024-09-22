@@ -14,13 +14,3 @@
 
 
 ### PS: Por favor, se for possível não se apoiem somente à essas informações, tentem até pesquisar um pouco mais, acho que até o Facebook deles também, por exemplo.
-
-#####  =>  Template Name    : BabyCare - Daycare Website Template
-
-#####  =>  Template Link    : https://htmlcodex.com/daycare-website-template
-
-#####  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
-
-#####  =>  Template Author  : HTML Codex
-
-#####  =>  Author Website   : https://htmlcodex.com
