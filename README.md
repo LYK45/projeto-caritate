@@ -2,6 +2,9 @@
 
 #### Github temporário para começarmos os trabalhos até o professor criar o oficial!
 
+| Etapa         | Atividades |
+|  :----:   | ----------- |
+| ETAPA 2         |[Projeto de Interface](docs/interface.md) <br> [Template Padrão](docs/template.md) |
 
 ## Galera, segue o material para pesquisarem e se informarem melhor na hora da contrução das páginas:
 
