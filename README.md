@@ -4,7 +4,7 @@
 
 | Etapa         | Atividades |
 |  :----:   | ----------- |
-| ETAPA 2         |[Projeto de Interface](docs/interface.md) <br> [Template Padrão](docs/template.md) |
+| ETAPA 2         |[Requisitos](doc.md) |
 
 ## Galera, segue o material para pesquisarem e se informarem melhor na hora da contrução das páginas:
 
