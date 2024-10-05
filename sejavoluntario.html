@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Projeto Carite BH</title>
+        <title>BabyCare - Daycare Website Template</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -27,7 +27,23 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-
+        <style>
+            .paragraph {
+                display: grid;
+                grid-template-columns: 1fr 2fr; /* Adjust column widths as needed */
+                gap: 40px; /* Adjust gap between columns */
+                text-align: center;
+            }
+    
+            .image-column {
+                text-align: center;
+                padding-bottom: 40px;
+            }
+    
+            img {
+                width: 100%; /* Make image responsive */
+            }
+        </style>
         
 
     </head>
@@ -46,7 +62,7 @@
             <div class="container topbar bg-primary d-none d-lg-block py-2" style="border-radius: 0 40px">
                 <div class="d-flex justify-content-between">
                     <div class="top-info ps-2">
-                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Belo Hirzonte, MG</a></small>
+                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small>
                         <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small>
                     </div>
                     <div class="top-link pe-2">
@@ -59,22 +75,22 @@
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light navbar-expand-xl py-3">
-                    <a href="index.html" class="navbar-brand"><img src="img/caritate-logo.jpg" style="height: 80px;"></a>
+                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Baby<span class="text-secondary">Care</span></h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link active">Sobre Nós</a>
-                            <a href="service.html" class="nav-item nav-link">Servicos</a>
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">Sobre</a>
+                            <a href="service.html" class="nav-item nav-link">Serviços</a>
                             <a href="volunteer.html" class="nav-item nav-link">Seja Voluntário</a>
-                            <a href="event.html" class="nav-item nav-link">Evento</a>
+                            <a href="event.html" class="nav-item nav-link">Eventos</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
                                 <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a href="blog.html" class="dropdown-item">Our Blog</a>
-                                    <a href="team.html" class="dropdown-item">Our Team</a>
+                                    <a href="portaldatransparencia.html" class="dropdown-item">Portal da Transparência</a>
+                                    <a href="team.html" class="dropdown-item">Nosso Time</a>
                                     <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                                     <a href="404.html" class="dropdown-item">404 Page</a>
                                 </div>
@@ -91,8 +107,8 @@
                                 </a>
                             </div>
                             <div class="d-flex flex-column pe-3 border-end border-primary">
-                                <span class="text-primary">Tem alguma dúvida?</span>
-                                <a href="#"><span class="text-secondary">Telfone: + 9999-9999</span></a>
+                                <span class="text-primary">Have any questions?</span>
+                                <a href="#"><span class="text-secondary">Free: + 0123 456 7890</span></a>
                             </div>
                         </div>
                         <button class="btn-search btn btn-primary btn-md-square rounded-circle" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-white"></i></button>
@@ -103,7 +119,7 @@
         <!-- Navbar End -->
 
 
-
+        <!-- Modal Search Start -->
         <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content rounded-0">
@@ -126,12 +142,12 @@
         <!-- Page Header Start -->
         <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container text-center py-5">
-                <h1 class="display-2 text-white mb-4">Sobre nós</h1>
+                <h1 class="display-2 text-white mb-4">Voluntariado</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item text-white" aria-current="page">Sobre nós</li>
+                        <li class="breadcrumb-item text-white" aria-current="page">Programs</li>
                     </ol>
                 </nav>
             </div>
@@ -139,38 +155,44 @@
         <!-- Page Header End -->
 
 
-        <!-- About Start -->
+        <!-- Volunteer Start -->
         <div class="container-fluid py-5 about bg-light">
             <div class="container py-5">
-                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
-                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Visão</h4>
-                </div>
-                <div class="row g-5 align-items-center">
-                    <h1 class="text-dark mb-4 display-5">O Caritate BH vislumbra um mundo onde todas as pessoas tenham acesso a cuidados de saúde de qualidade, apoio emocional e oportunidades de desenvolvimento, vivendo com dignidade e esperança.</h1>
-                </div>
-                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Valores</h4>
-                <p>    
-                    <div class="row mb-4">
-                        <div class="col-lg-6">
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Amor e compaixão: A base de todas as ações da Caritate BH.</h6>
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Solidariedade: O compromisso em ajudar o próximo, sem distinção.</h6>
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Respeito: Valorização da individualidade e das diferenças.</h6>
-                        </div>
-                        <div class="col-lg-6">
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Ética: Atitude íntegra e transparente em todas as ações.</h6>
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Esperança: A crença em um futuro melhor para todos.</h6>
-                            <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Empatia: A capacidade de se colocar no lugar do outro.</h6>
-                        </div>
+                <div class="paragraph">
+                    <div class="image-column">
+                        <img src="img/Caritate_2.jpg" alt="Image">
                     </div>
-                    A Caritate BH é mais do que uma organização, é uma comunidade de pessoas unidas por um propósito comum: fazer a diferença na vida de quem precisa. Através de suas ações, a Caritate BH busca construir um mundo mais justo e solidário, onde o amor e a esperança sejam a força motriz para superar desafios e transformar vidas.
-                </p>
-                <p>
-                    A Caritate BH existe graças à dedicação e ao empenho de seus voluntários. São eles que, com seus sorrisos, palavras de conforto e ações solidárias, transformam o dia a dia de tantas pessoas. Para que essa jornada seja ainda mais significativa e impactante, elaboramos este Manual de Boas Práticas. Este guia tem como objetivo oferecer aos nossos voluntários um conjunto de ferramentas e orientações para que possam desenvolver suas atividades de forma ética, profissional e em sintonia com os valores da Caritate BH. Acreditamos que, ao seguir as diretrizes deste manual, nossos voluntários poderão potencializar seu impacto, fortalecer o vínculo com a comunidade e construir um futuro mais humano e solidário para todos.
-                </p>    
+                    <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
+                        <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">O que é ser voluntário?</h4>
+                        <h4>
+                            Se você chegou até aqui é porque deseja fazer parte do grande número de pessoas que colaboram e contribuem, dia a dia, para um mundo melhor: Os Voluntários.
+                        </h4> 
+                        <h4>
+                            A ação voluntária acontece a partir da vontade de se exercer a cidadania, quando o indivíduo passa a se enxergar como peça fundamental na solução dos problemas sociais locais, capaz de criar ou transformar a realidade. 
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
+                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">O voluntariado no Brasil</h4>
+                </div>
+                <h4>
+                    Desde nossa colonização temos trabalho voluntário no Brasil, só que com características e objetivos diferentes, e o que é interessante é que ele sempre foi importante para a sociedade. A caridade, o assistencialismo, e a militância política deram lugar a solidariedade, ao desejo de fazer o bem, ao exercício de cidadania
+                </h4>
+                <h4>
+                    O que mais corresponde à realidade atual seria um conceito de cidadania que define o sujeito como participante ativo nos assuntos da comunidade. “A cidadania é, pois, a participação ativa nos assuntos da cidade. É o fato de não ser meramente governado, mas também governante. Nesse sentido, a liberdade não consiste apenas em gozar de certos direitos; consiste essencialmente no fato de ser co-participante do governo”. (Canivez, 1991).
+                </h4>
+                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">A nossa missão</h4>
+                <h4>
+                    O voluntário é o jovem ou o adulto que, devido ao seu interesse pessoal e ao seu espírito cívico, dedica parte de seu tempo, sem remuneração alguma, a diversas formas de atividades, organizadas ou não, de bem estar social ou outros campos”. (ONU – Organização das Nações Unidas) “
+                </h4>
+                <h4>
+                    “Voluntário é o ator social e agente de transformação, que presta serviços não remunerados em benefício da comunidade. Doando seu tempo e conhecimentos, realiza um trabalho gerado pela energia de seu impulso solidário, e atende não só às necessidades do próximo, como também aos imperativos de uma causa. O voluntário atende também suas próprias motivações pessoais, sejam elas de caráter religioso, cultural, filosófico ou emocional.” (Fundação Abrinq) “</h4>
             </div>
-        </div>
-        <!-- About End -->
+        </div>    
+        <!-- Volunteer end -->
 
+
+        
 
         <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
@@ -268,7 +290,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Projeto Caritate</a>, Todos Direitos Reservados.</span>
                     </div>
                     <div class="col-md-6 my-auto text-center text-md-end text-white">
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
