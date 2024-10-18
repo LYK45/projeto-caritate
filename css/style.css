@@ -206,16 +206,22 @@ h6,
     }
 }
 
-@media (max-width: 1000px) {
+.paragraph {
+    display: grid;
+    grid-template-columns: 1fr; /* Uma única coluna para telas menores */
+    gap: 40px;
+    justify-content: center; /* Centraliza a imagem e o texto */
+  }
+  
+  @media (min-width: 1000px) {
     .paragraph {
-        display: grid;
-        grid-template-rows: auto auto;
-        gap: 2rem;
+      grid-template-columns: 40% 60%;
+      justify-content: left;
     }
     .image-column {
-        display: block;
+      align-content: center; /* Mantém o alinhamento vertical da imagem */
     }
-}
+  }
 
 .dropdown .dropdown-menu a:hover {
     background: var(--bs-secondary);

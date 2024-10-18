@@ -30,18 +30,31 @@
         <style>
             .paragraph {
                 display: grid;
-                grid-template-columns: 1fr 2fr; /* Adjust column widths as needed */
+                grid-template-columns: 1fr; /* Adjust column widths as needed */
                 gap: 40px; /* Adjust gap between columns */
-                text-align: center;
+                text-align: left;
+            }
+
+            @media (min-width: 1000px) {
+                .paragraph {
+                    display: grid;
+                    grid-template-columns: 1fr 2fr; /* Adjust column widths as needed */
+                    gap: 40px; /* Adjust gap between columns */
+                    text-align: center;
+                }
+                .image-column {
+                    text-align: center;
+                    padding-bottom: 40px;         
+                }
             }
     
             .image-column {
-                text-align: center;
                 padding-bottom: 40px;
             }
     
             img {
                 width: 100%; /* Make image responsive */
+                border-radius: 50% 20% / 10% 40%;
             }
 
             .botao {
