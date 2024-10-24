@@ -246,7 +246,7 @@ h6,
 /*** Hero Header ***/
 .hero-header,
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url(../img/Caritate.jpg);
+    background: url(../img/Caritate.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 192, 203, 0.5));
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -395,6 +395,7 @@ h6,
     box-shadow: 0 0 45px rgba(0, 0, 0, .1);
     width: 100%;
     height: 100%;
+    border: 1px solid rgba(255, 72, 128, 1); /* Cor rosa inicial */
     border-radius: 50% 20% / 10% 40%;
     transition: 0.5s;
     position: relative;
@@ -407,40 +408,42 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    right: auto;
     background: transparent;
     border-radius: 50% 20% / 10% 40%;
     transition: .5s;
+    z-index: 1; /* Z-index abaixo do texto */
 }
 
 .service-item:hover {
-    border: 1px solid var(--bs-secondary) !important;
+    /* Removida mudança de borda, mantendo rosa */
 }
 
 .service-item:hover .service-content::after {
-    background: var(--bs-secondary);
+    background: rgba(255, 255, 0, 0.2); /* Amarelo */
     width: 100%;
-    opacity: 1;
-    z-index: 1;
+    opacity: 0.5;
+    z-index: 1; /* Z-index do fundo */
 }
 
 .service-item .service-content .service-content-inner {
     position: relative;
-    z-index: 2;
+    z-index: 2; /* Z-index acima do fundo */
 }
 
 .service-item .service-content-inner i,
 .service-item .service-content-inner p,
 .service-item .service-content-inner a.h4 {
-    transition: 0.5s;
+    transition: color 0.5s;
+    z-index: 3; /* Garantindo que o texto fique acima */
 }
 
 .service-item:hover .service-content-inner i,
 .service-item:hover .service-content-inner p {
-    color: var(--bs-white) !important;
+    color: inherit !important;
 }
+
 .service-item:hover .service-content-inner a.h4 {
-    color: var(--bs-primary);
+    color: inherit !important;
 }
 
 .service-item:hover .service-content-inner a.btn-primary {
