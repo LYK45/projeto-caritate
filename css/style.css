@@ -396,7 +396,7 @@ h6,
     width: 100%;
     height: 100%;
     border: 1px solid rgba(255, 72, 128, 1); /* Cor rosa inicial */
-    border-radius: 50% 20% / 10% 40%;
+    border-radius:  / 10% 40%;
     transition: 0.5s;
     position: relative;
 }
@@ -471,6 +471,7 @@ h6,
     margin-left: -50px; 
     border-radius: 10% / 50%;
 }
+
 
 .program .program-item .program-text {
     padding-top: 150px; 
@@ -700,10 +701,7 @@ h6,
 
 /*** Footer Start ***/
 .footer {
-    background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, 1)), url(../img/fundo.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(rgba(255, 72, 128, 0.05), rgba(255, 72, 128, 0.2));
 }
 
 .footer .footer-galary-img img {
