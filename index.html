@@ -38,6 +38,20 @@
             img{
                 width: 100%; /* Make image responsive */
                 border-radius: 50% 20% / 10% 40%;
+            }
+            .doacao-btn {
+                text-align: center;
+                width: 10%;
+                border-radius: 5px;
+                font-size: 16px;
+                border-color: white;
+                border-radius: 10%;
+                color:white;
+            }
+    
+            .doacao-btn:hover {
+                background-color: rgba(255, 255, 0, 0.2); /* Amarelo */ 
+                color:#C13584;
             } 
         </style>
     </head>
@@ -86,21 +100,7 @@
                             </div>
                             <a href="contato.html" class="nav-item nav-link">Contato</a>
                         </div>
-                        <div class="d-flex me-4">
-                            <div id="phone-tada" class="d-flex align-items-center justify-content-center">
-                                <a href="" class="position-relative wow tada" data-wow-delay=".9s" >
-                                    <i class="fa fa-phone-alt text-primary fa-2x me-4"></i>
-                                    <div class="position-absolute" style="top: -7px; left: 20px;">
-                                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="d-flex flex-column pe-3 border-end border-primary">
-                                <span class="text-primary">Alguma pergunta?</span>
-                                <a href="#"><span class="text-secondary">+55 31 99258-0770</span></a>
-                            </div>
-                        </div>
-                        <button class="btn-search btn btn-primary btn-md-square rounded-circle" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-white"></i></button>
+                        <button class="doacao-btn bg-light"><a href="doacao.html" target="_blank" >Doe agora</a></button>
                     </div>
                 </nav>
             </div>
