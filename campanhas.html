@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
     <head>
         <meta charset="utf-8">
-        <title>BabyCare - Daycare Website Template</title>
+        <title>Projeto Caritate</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -28,7 +28,42 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
 
-        
+        <style>
+            .paragraph {
+            display: grid;
+            grid-template-columns: 1fr; /* Adjust column widths as needed */
+            gap: 40px; /* Adjust gap between columns */
+            text-align: left;
+        }
+
+        @media (min-width: 1000px) {
+            .paragraph {
+                display: grid;
+                grid-template-columns: 1fr 2fr; /* Adjust column widths as needed */
+                gap: 40px; /* Adjust gap between columns */
+                text-align: center;
+            }
+            .image-column {
+                text-align: center;
+                padding-bottom: 40px;         
+            }
+            .novoParagraph {
+                display: grid;
+                grid-template-columns: 2fr 1fr; /* Adjust column widths as needed */
+                gap: 40px; /* Adjust gap between columns */
+                text-align: center;
+            }
+        }
+
+        .image-column {
+            padding-bottom: 40px;
+        }
+
+        img {
+            width: 100%; /* Make image responsive */
+            border-radius: 50% 20% / 10% 40%;
+        }
+        </style>
 
     </head>
 
@@ -42,44 +77,40 @@
 
 
         <!-- Navbar start -->
-        <div class="container-fluid border-bottom bg-light wow fadeIn" data-wow-delay="0.1s">
+        <div class="container-fluid border-bottom wow fadeIn" data-wow-delay="0.1s">
             <div class="container topbar bg-primary d-none d-lg-block py-2" style="border-radius: 0 40px">
                 <div class="d-flex justify-content-between">
                     <div class="top-info ps-2">
-                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small>
-                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small>
+                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Belo Horizonte, MG</a></small>
+                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">voluntarios@caritatebh.com</a></small>
                     </div>
                     <div class="top-link pe-2">
-                        <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-secondary"></i></a>
-                        <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-twitter text-secondary"></i></a>
-                        <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-instagram text-secondary"></i></a>
-                        <a href="" class="btn btn-light btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-secondary"></i></a>
+                        <a href="https://www.facebook.com/CaritateBH?locale=pt_BR" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-secondary"></i></a>
+                        <a href="https://youtube.com/@caritatebh?si=PJOVv3OcGLdS1CNp" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-youtube text-secondary"></i></a>
+                        <a href="https://www.instagram.com/caritatebh/" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-instagram text-secondary"></i></a>
                     </div>
                 </div>
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light navbar-expand-xl py-3">
-                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Baby<span class="text-secondary">Care</span></h1></a>
+                    <a href="index.html" class="navbar-brand"><img src="img/caritate-logo.jpg" style="height: 80px;"></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
                             <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">Sobre</a>
-                            <a href="service.html" class="nav-item nav-link">Serviços</a>
-                            <a href="program.html" class="nav-item nav-link">Programas</a>
-                            <a href="event.html" class="nav-item nav-link">Eventos</a>
+                            <a href="sobre.html" class="nav-item nav-link">Sobre Nós</a>
+                            <a href="sejavoluntario.html" class="nav-item nav-link">Seja Voluntário</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Serviços</a>
                                 <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a href="portaldatransparencia.html" class="dropdown-item">Portal da Transparência</a>
-                                    <a href="team.html" class="dropdown-item">Nosso Time</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
+                                    <a href="hospital.html" class="dropdown-item">Hospital</a>
+                                    <a href="casas.html" class="dropdown-item">Casas</a>
+                                    <a href="campanhas.html" class="dropdown-item">Campanhas</a>
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">Contato</a>
+                            <a href="contato.html" class="nav-item nav-link">Contato</a>
                         </div>
                         <div class="d-flex me-4">
                             <div id="phone-tada" class="d-flex align-items-center justify-content-center">
@@ -126,12 +157,11 @@
         <!-- Page Header Start -->
         <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container text-center py-5">
-                <h1 class="display-2 text-white mb-4">Testimonial</h1>
+                <h1 class="display-2 text-white mb-4">Serviços</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center mb-0">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Páginas</a></li>
-                        <li class="breadcrumb-item text-white" aria-current="page">Testimonial</li>
+                        <li class="breadcrumb-item"><a href="servicos.html">Home</a></li>
+                        <li class="breadcrumb-item text-white" aria-current="page">Serviços</li>
                     </ol>
                 </nav>
             </div>
@@ -139,209 +169,150 @@
         <!-- Page Header End -->
 
 
-        <!-- Testimonial Start -->
-        <div class="container-fluid testimonial py-5">
+         <!-- Service Start -->
+        <div class="container-fluid service py-5">
             <div class="container py-5">
-                <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
-                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Our Testimonials</h4>
-                    <h1 class="mb-5 display-3">Parents Say About Us</h1>
-                </div>
-                <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.3s">
-                    <div class="testimonial-item img-border-radius bg-light border border-primary p-4">
-                        <div class="p-4 position-relative">
-                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
-                            <div class="d-flex align-items-center">
-                                <div class="border border-primary bg-white rounded-circle">
-                                    <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="">
-                                </div>
-                                <div class="ms-4">
-                                    <h4 class="text-dark">Aline</h4>
-                                    <p class="m-0 pb-3">Profession</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                    </div>
-                                </div>
+                <div class="col-md-6 col-lg-12 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="text-center border-primary border rounded bg-white service-item">
+                        <div class="service-content-inner p-5">
+                            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 1200px;">
+                                <h1 class="mb-5 display-3">Apoio a Pacientes e Suporte Familiar</h1>
                             </div>
-                            <div class="border-top border-primary mt-4 pt-3">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item img-border-radius bg-light border border-primary p-4">
-                        <div class="p-4 position-relative">
-                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
-                            <div class="d-flex align-items-center">
-                                <div class="border border-primary bg-white rounded-circle">
-                                    <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="">
+                            <div class="paragraph">    
+                                <div class="image-column">
+                                    <img src="img/Caritate_3.jpg" class="d-flex w-100" alt="Image">
                                 </div>
-                                <div class="ms-4">
-                                    <h4 class="text-dark">Luis</h4>
-                                    <p class="m-0 pb-3">Profession</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                    </div>
+                                <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Um pouco sobre</h4>
+                                    <h4>
+                                        O voluntariado em apresentações em hospitais é uma iniciativa que busca levar alegria, conforto e um pouco de leveza para a rotina de pacientes e crianças internados. Através de performances artísticas, como música, teatro, contação de histórias e palhaçaria, os voluntários buscam proporcionar momentos de descontração e humanização, contribuindo para a recuperação dos pacientes.
+                                    </h4>
+                                </div>  
+                            </div>  
+                            <div class="col-lg-12 text-md-start wow fadeIn" data-wow-delay="0.3s">
+                                <h4>
+                                    Oferecemos suporte emocional e social a pacientes hospitalares e suas famílias. Com visitas presenciais e ações que incluem conversas, brincadeiras e doações, buscamos trazer conforto e esperança em momentos de vulnerabilidade.
+                                </h4>
+                            </div>
+                            <div class="novoParagraph">
+                                <div class="col-lg-12 wow fadeIn" style="padding-top: 10px;" data-wow-delay="0.3s">
+                                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Benefícios</h4>
+                                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Felicidade: O paciente ganha uma companhia em uma situação que infelizmente o mesmo acaba muito solitário e deslocado no mundo.</h6>
+                                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Desenvolvimento pessoal: A experiência de voluntariado proporciona um crescimento pessoal significativo, desenvolvendo habilidades como empatia, comunicação e trabalho em equipe.</h6>
+                                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Sentimento de propósito: Ao levar alegria e conforto para as pessoas, os voluntários sentem que estão fazendo a diferença na vida de outras pessoas.</h6>
+                                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Novas amizades: O voluntariado é uma oportunidade para conhecer pessoas com diferentes histórias e experiências de vida.</h6>                              
+                                </div>  
+                                <div class="image-column">
+                                    <img src="img/Caritate_3.jpg" class="d-flex w-100" alt="Image">
+                                </div>
+                            </div>                      
+                            <div class="col-lg-12 wow fadeIn" style="padding-top: 10px;" data-wow-delay="0.3s">
+                                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Locais de atendimento</h4>
+                            </div>
+                            <div class="row mb-4 text-md-start">
+                                <div class="col-lg-6">
+                                    <p class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Hospital das Clínicas: Apoio a pacientes em tratamento oncológico e suas famílias.</p>
+                                    <p class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Santa Casa de Misericórdia: Visitas semanais a pacientes e ações de recreação para crianças hospitalizadas.</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Hospital João Paulo II: Visitas mensais a pacientes e ações de recreação para crianças hospitalizadas.</p>
+                                    <p class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Hospital da Baleia: Visitas semanais.</p>
                                 </div>
                             </div>
-                            <div class="border-top border-primary mt-4 pt-3">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item img-border-radius bg-light border border-primary p-4">
-                        <div class="p-4 position-relative">
-                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
-                            <div class="d-flex align-items-center">
-                                <div class="border border-primary bg-white rounded-circle">
-                                    <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="">
-                                </div>
-                                <div class="ms-4">
-                                    <h4 class="text-dark">Santos</h4>
-                                    <p class="m-0 pb-3">Profession</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="border-top border-primary mt-4 pt-3">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item img-border-radius bg-light border border-primary p-4">
-                        <div class="p-4 position-relative">
-                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
-                            <div class="d-flex align-items-center">
-                                <div class="border border-primary bg-white rounded-circle">
-                                    <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="">
-                                </div>
-                                <div class="ms-4">
-                                    <h4 class="text-dark">Santos</h4>
-                                    <p class="m-0 pb-3">Profession</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="border-top border-primary mt-4 pt-3">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Testimonial End -->
 
-
-        <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div class="footer-item">
-                            <h2 class="fw-bold mb-3"><span class="text-primary mb-0">Baby</span><span class="text-secondary">Care</span></h2>
-                            <p class="mb-4">There cursus massa at urnaaculis estieSed aliquamellus vitae ultrs condmentum leo massamollis its estiegittis miristum.</p>
-                            <div class="border border-primary p-3 rounded bg-light">
-                                <h5 class="mb-3">Newsletter</h5>
-                                <div class="position-relative mx-auto border border-primary rounded" style="max-width: 400px;">
-                                    <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2 text-white">SignUp</button>
-                                </div>
+            <!-- Remove the container if you want to extend the Footer to full width. -->
+<!-- Remove the container if you want to extend the Footer to full width. -->
+                <!-- Footer -->
+            <footer class="text-center text-pink">
+                <!-- Grid container -->
+                <div class="container">
+                    <!-- Section: Links -->
+                    <section class="mt-5">
+                    <!-- Grid row-->
+                    <div class="row text-center d-flex justify-content-center pt-5">
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="sobre.html" class="text-pink">Home</a>
+                        </h6>
+                        </div>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="sejavoluntario.html" class="text-pink">Sobre Nós</a>
+                        </h6>
+                        </div>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="sejavoluntario.html" class="text-pink">Seja Voluntário</a>
+                        </h6>
+                        </div>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="servicos.html" class="text-pink">Serviços</a>
+                        </h6>
+                        </div>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="contato.html" class="text-pink">Contato</a>
+                        </h6>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row-->
+                    </section>
+                    <!-- Section: Links -->
+            
+                    <hr class="my-5" />
+            
+                    <!-- Section: Text -->
+                    <section class="mb-5">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-8">
+                            <p>
+                                A Caritate BH tem como missão transformar a realidade de pessoas em vulnerabilidade social, promovendo a qualidade de vida e o bem-estar através de ações de solidariedade e apoio integral.
+                            </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div class="footer-item">
-                            <div class="d-flex flex-column p-4 ps-5 text-dark border border-primary" 
-                            style="border-radius: 50% 20% / 10% 40%;">
-                                <p>Monday: 8am to 5pm</p>
-                                <p>Tuesday: 8am to 5pm</p>
-                                <p>Wednes: 8am to 5pm</p>
-                                <p>Thursday: 8am to 5pm</p>
-                                <p>Friday: 8am to 5pm</p>
-                                <p>Saturday: 8am to 5pm</p>
-                                <p class="mb-0">Sunday: Closed</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div class="footer-item">
-                            <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">LOCATION</h4>
-                            <div class="d-flex flex-column align-items-start">
-                                <a href="" class="text-body mb-4"><i class="fa fa-map-marker-alt text-primary me-2"></i> 104 North tower New York, USA</a>
-                                <a href="" class="text-start rounded-0 text-body mb-4"><i class="fa fa-phone-alt text-primary me-2"></i> (+012) 3456 7890 123</a>
-                                <a href="" class="text-start rounded-0 text-body mb-4"><i class="fas fa-envelope text-primary me-2"></i> exampleemail@gmail.com</a>
-                                <a href="" class="text-start rounded-0 text-body mb-4"><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</a>
-                                <div class="footer-icon d-flex">
-                                    <a class="btn btn-primary btn-sm-square me-3 rounded-circle text-white" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-primary btn-sm-square me-3 rounded-circle text-white" href=""><i class="fab fa-twitter"></i></a>
-                                    <a href="#" class="btn btn-primary btn-sm-square me-3 rounded-circle text-white"><i class="fab fa-instagram"></i></a>
-                                    <a href="#" class="btn btn-primary btn-sm-square rounded-circle text-white"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div class="footer-item">
-                            <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">OUR GALLARY</h4>
-                            <div class="row g-3">
-                                <div class="col-4">
-                                    <div class="footer-galary-img rounded-circle border border-primary">
-                                        <img src="img/galary-1.jpg" class="img-fluid rounded-circle p-2" alt="">
-                                    </div>
-                               </div>
-                               <div class="col-4">
-                                    <div class="footer-galary-img rounded-circle border border-primary">
-                                        <img src="img/galary-2.jpg" class="img-fluid rounded-circle p-2" alt="">
-                                    </div>
-                               </div>
-                                <div class="col-4">
-                                    <div class="footer-galary-img rounded-circle border border-primary">
-                                        <img src="img/galary-3.jpg" class="img-fluid rounded-circle p-2" alt="">
-                                    </div>
-                               </div>
-                                <div class="col-4">
-                                    <div class="footer-galary-img rounded-circle border border-primary">
-                                        <img src="img/galary-4.jpg" class="img-fluid rounded-circle p-2" alt="">
-                                    </div>
-                               </div>
-                                <div class="col-4">
-                                    <div class="footer-galary-img rounded-circle border border-primary">
-                                        <img src="img/galary-5.jpg" class="img-fluid rounded-circle p-2" alt="">
-                                    </div>
-                               </div>
-                                <div class="col-4">
-                                    <div class="footer-galary-img rounded-circle border border-primary">
-                                        <img src="img/galary-6.jpg" class="img-fluid rounded-circle p-2" alt="">
-                                    </div>
-                               </div>
-                            </div>
-                        </div>
-                    </div>
+                    </section>
+                    <!-- Section: Text -->
+            
+                    <!-- Section: Social -->
+                    <section class="text-center mb-5">
+                        <a href="https://www.instagram.com/caritatebh/" class="text-pink me-4">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/CaritateBH?locale=pt_BR" class="text-pink me-4">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com/@caritatebh?si=PJOVv3OcGLdS1CNp" class="text-pink me-4">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </section>
+                    <!-- Section: Social -->
                 </div>
-            </div>
-        </div>
-        <!-- Footer End -->
+                <!-- Grid container -->
+            </footer>
+                <!-- Footer -->
+        </div>            
+            
 
 
         <!-- Copyright Start -->
@@ -363,9 +334,9 @@
         <!-- Copyright End -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
-
+        <!-- Botão de Whatsapp -->
+        <a class="whatsapp-link"  href="https://web.whatsapp.com/send?phone=55031992580770" class="btn btn-light btn-sm-square rounded-circle me-0" target="_blank"><i class="fab fa-whatsapp"></i>
+        </a>
         
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
