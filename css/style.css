@@ -168,11 +168,17 @@ h6,
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
+/* Ajuste para aumentar o tamanho da fonte e reduzir o espaçamento */
 .navbar .navbar-nav .nav-link {
-    padding: 10px 12px;
-    font-size: 16px;
+    padding: 8px 10px; /* Diminuindo o padding para aproximar os links */
+    font-size: 18px; /* Aumentando o tamanho da fonte */
     font-weight: 600;
     transition: .5s;
+    margin-left: -20px; /* Reduzindo o espaço à esquerda do primeiro link */
+}
+
+.navbar-brand {
+    margin-right: -35px; /* Aproximando a logo dos links */
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -211,17 +217,17 @@ h6,
     grid-template-columns: 1fr; /* Uma única coluna para telas menores */
     gap: 40px;
     justify-content: center; /* Centraliza a imagem e o texto */
-  }
-  
-  @media (min-width: 1000px) {
+}
+
+@media (min-width: 1000px) {
     .paragraph {
-      grid-template-columns: 40% 60%;
-      justify-content: left;
+        grid-template-columns: 40% 60%;
+        justify-content: left;
     }
     .image-column {
-      align-content: center; /* Mantém o alinhamento vertical da imagem */
+        align-content: center; /* Mantém o alinhamento vertical da imagem */
     }
-  }
+}
 
 .dropdown .dropdown-menu a:hover {
     background: var(--bs-secondary);
