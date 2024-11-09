@@ -11,27 +11,23 @@
     };
     spinner(0);
     
-    
     // Initiate the wowjs
     new WOW().init();
     
-    
-   // Back to top button
-   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('.back-to-top').fadeIn('slow');
-    } else {
-        $('.back-to-top').fadeOut('slow');
-    }
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
     });
     $('.back-to-top').click(function () {
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
 
-
     // Testimonial carousel
-
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1500,
@@ -59,7 +55,6 @@
         }
     });
 
-
     // Modal Video
     $(document).ready(function () {
         var $videoSrc;
@@ -77,6 +72,62 @@
         })
     });
 
+    //JS DOS NUMEROS DO PROJETO//
+    $(document).ready(function() {
+        // Função para animar os números
+        function animateNumbers() {
+            const numbers = document.querySelectorAll('.count');
+            numbers.forEach((number) => {
+                const countTo = parseInt(number.getAttribute('data-count'));
+                let count = 0;
+                const increment = Math.ceil(countTo / 20); // Define a velocidade da animação
+    
+                function updateNumber() {
+                    count += increment;
+                    if (count > countTo) count = countTo;
+                    number.textContent = count;
+    
+                    if (count < countTo) {
+                        requestAnimationFrame(updateNumber);
+                    }
+                }
+                updateNumber();
+            });
+        }
+    
+        // Usando IntersectionObserver para detectar quando a seção de números estiver visível
+        const numbersSection = document.querySelector('.container .row'); // Selecione o contêiner dos números
+    
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateNumbers(); // Chama a função de animação quando a seção entra na tela
+                    observer.unobserve(entry.target); // Para a observação depois que a animação começar
+                }
+            });
+        }, {
+            threshold: 0.9 // A animação começa quando 90% da seção estiver visível
+        });
+    
+        observer.observe(numbersSection); // Começa a observar a seção de números
+    });    
+
+
+//BOTÃO DE VOLTA AO TOPO//
+// Mostrar o botão de voltar ao topo quando o usuário rolar para baixo
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 200) { // Mostrar botão após 200px de rolagem
+        $('.back-to-top').addClass('show'); // Adiciona a classe 'show'
+    } else {
+        $('.back-to-top').removeClass('show'); // Remove a classe 'show'
+    }
+});
+
+// Fazer o scroll suave até o topo quando o botão for clicado
+$('.back-to-top').click(function() {
+    $('html, body').animate({ scrollTop: 0 }, 50); // 50ms para o scroll suave
+    return false; // Evita o comportamento padrão do link
+});
 
 
 })(jQuery);

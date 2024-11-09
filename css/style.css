@@ -40,13 +40,18 @@ h3,
 }
 
 h4,
-h5,
-h6,
-.h4,
-.h5,
-.h6 {
+.h4 {
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
+}
+
+h5,
+h6,
+.h5,
+.h6 {
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify; /* Justifica o texto */
 }
 
 .display-1,
@@ -59,16 +64,58 @@ h6,
     font-family: 'Fredoka', sans-serif;
 }
 
-.display-4,
 .display-5,
 .display-6 {
     font-weight: 600;
+    text-align: justify; /* Justifica o texto */
 }
 
 .wow,
 .animated {
     animation-duration: 2s !important;
 }
+
+.projeto-numbers-bg {
+    background: url('img\Caritate_5.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+    color: white; /* Garantir que o texto seja legível sobre a imagem */
+}
+
+.number-box h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    }
+
+/* Estilo para o botão de voltar ao topo */
+.back-to-top {
+    position: fixed;
+    bottom: 30px; /* Distância do fundo da página */
+    left: 30px; /* Distância da borda esquerda da página */
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 72, 128, 1); /* Cor de fundo do botão */
+    color: white; /* Cor do ícone */
+    border-radius: 50%; /* Deixa o botão redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; /* Tamanho do ícone */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Transição suave */
+    z-index: 99; /* Fica acima de outros elementos */
+}
+
+.back-to-top:hover {
+    background-color: rgb(249, 252, 211); /* Cor quando o mouse passar sobre o botão */
+}
+
+.back-to-top.show {
+    opacity: 1; /* Torna o botão visível quando a classe 'show' for adicionada */
+}
+
+
 /*** Common CSS End ***/
 
 
@@ -115,7 +162,7 @@ h6,
 }
 
 .btn.btn-primary:hover {
-    background: rgb(193, 209, 15);
+    background: rgb(249, 252, 211);
     color: var(--bs-primary);
 }
 
@@ -252,7 +299,7 @@ h6,
 /*** Hero Header ***/
 .hero-header,
 .page-header {
-    background: url(../img/Caritate.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 192, 203, 0.5));
+    background: url(../img/Caritate.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 10%, rgba(255, 192, 203, 0.5) 30%);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -261,6 +308,31 @@ h6,
 
 
 /*** About Start ***/
+
+/*** Section for Numbers ***/
+.number-box {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.number-box h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ff4081; /* Você pode mudar a cor para combinar com o seu tema */
+}
+
+.number-box p {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .number-box h2 {
+        font-size: 30px;
+    }
+}
+
 .video {
     position: relative;
     height: 100%;
@@ -383,10 +455,17 @@ h6,
 }
 
 .about {
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/fundo.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* Estilos para a imagem de fundo na seção "Números do Projeto" */
+.projeto-numbers-bg {
+    background: url("img/Casas_3.jpg") no-repeat center center;
+    background-size: cover; /* Garante que a imagem cubra toda a área */
+    padding: 50px 0; /* Adiciona um espaçamento ao redor do conteúdo */
 }
 
 /*** About End ***/
@@ -416,6 +495,7 @@ h6,
     left: 0;
     background: transparent;
     border-radius: 50% 20% / 10% 40%;
+    text-align: justify; /* Justifica o texto */
     transition: .5s;
     z-index: 1; /* Z-index abaixo do texto */
 }
@@ -429,6 +509,7 @@ h6,
 .service-item .service-content-inner p,
 .service-item .service-content-inner a.h4 {
     transition: color 0.5s;
+    text-align: justify; /* Justifica o texto */
     z-index: 3; /* Garantindo que o texto fique acima */
 }
 
@@ -681,7 +762,7 @@ h6,
 
 /*** Footer Start ***/
 .footer {
-    background: linear-gradient(rgba(255, 72, 128, 0.05), rgba(255, 72, 128, 0.2));
+    background: linear-gradient(rgba(232, 141, 168, 0.05), rgba(255, 72, 128, 0.2));
 }
 
 .footer .footer-galary-img img {
