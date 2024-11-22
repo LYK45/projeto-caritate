@@ -17,9 +17,6 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        <!-- Link para o Font Awesome -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
         <!-- Libraries Stylesheet -->
         <link href="lib/animate/animate.min.css" rel="stylesheet">
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
@@ -57,31 +54,37 @@
 
         <!-- Navbar start -->
         <div class="container-fluid border-bottom wow fadeIn" data-wow-delay="0.1s">
-            <div class="container topbar bg-primary d-none d-lg-block py-2" style="border-radius: 0 40px">
+            <div class="container topbar bg-primary d-none d-lg-block py-2" style="border-radius: 0 40px; padding: 5px 0; margin-bottom: -10px;">
                 <div class="d-flex justify-content-between">
                     <div class="top-info ps-2">
-                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Belo Horizonte, MG</a></small>
-                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">voluntarios@caritatebh.com</a></small>
+                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> 
+                            <a href="#" class="text-white">Belo Horizonte, MG</a>
+                        </small>
+                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i>
+                            <a href="#" class="text-white">voluntarios@caritatebh.com</a>
+                        </small>
                     </div>
                     <div class="top-link pe-2">
                         <a href="https://www.facebook.com/CaritateBH?locale=pt_BR" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-secondary"></i></a>
                         <a href="https://youtube.com/@caritatebh?si=PJOVv3OcGLdS1CNp" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-youtube text-secondary"></i></a>
-                        <a href="https://www.instagram.com/caritatebh/" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-instagram text-secondary"></i></a>  
+                        <a href="https://www.instagram.com/caritatebh/" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-instagram text-secondary"></i></a>
                     </div>
                 </div>
             </div>
             <div class="container px-0">
-                <nav class="navbar navbar-light navbar-expand-xl py-3">
-                    <a href="index.html" class="navbar-brand"><img src="img/caritate-logo.jpg" style="height: 80px;"></a>
+                <nav class="navbar navbar-light navbar-expand-xl py-3" style="padding: 5px 0;">
+                    <a href="home.html" class="navbar-brand" style="margin-right: 5px;">
+                        <img src="img/caritate-logo.jpg" style="height: 100px;"> <!-- Logo Caritate -->
+                    </a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="sobre.html" class="nav-item nav-link">Sobre Nós</a>
-                            <a href="sejavoluntario.html" class="nav-item nav-link">Seja Voluntário</a>
-                            <div class="nav-item dropdown">
+                            <a href="home.html" class="nav-item nav-link active" style="margin-left: 0;">Home</a>
+                            <a href="sobre.html" class="nav-item nav-link" style="margin: 0 8px;">Sobre Nós</a>
+                            <a href="sejavoluntario.html" class="nav-item nav-link" style="margin: 0 8px;">Seja Voluntário</a>
+                            <div class="nav-item dropdown" style="margin: 0 8px;">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Serviços</a>
                                 <div class="dropdown-menu m-0 bg-secondary rounded-0">
                                     <a href="hospital.html" class="dropdown-item">Hospital</a>
@@ -89,8 +92,8 @@
                                     <a href="campanhas.html" class="dropdown-item">Campanhas</a>
                                 </div>
                             </div>
-                            <a href="contato.html" class="nav-item nav-link">Contato</a>
-                            <a href="doacao.html" class="nav-item nav-link">Doação</a>
+                            <a href="contato.html" class="nav-item nav-link" style="margin: 0 8px;">Contato</a>
+                            <a href="doacoes.html" class="nav-item nav-link" style="margin: 0 8px;">Doação</a>
                         </div>
                         <button class="doacao-btn bg-light"><a href="doacao.html" target="_blank" >Doe agora</a></button>
                     </div>
@@ -170,6 +173,10 @@
                               </div>
                             </div>
                         </form>
+                        <div class="container my-5">
+                            <h2 class="text-center">Dados de Doações</h2>
+                            <canvas id="doacoesGrafico" ></canvas>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -289,12 +296,6 @@
         <a class="whatsapp-link"  href="https://web.whatsapp.com/send?phone=55031992580770" class="btn btn-light btn-sm-square rounded-circle me-0" target="_blank"><i class="fab fa-whatsapp"></i>
         </a>
 
-         <!-- Botão que Sobe a Página Inicio -->
-         <a href="#" class="back-to-top">
-            <i class="fas fa-arrow-up"></i> <!-- Ícone da seta -->
-        </a>
-        <!-- Botão que Sobe a Página Fim -->
-
        
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -304,6 +305,31 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('doacoesGrafico').getContext('2d');
+        const doacoesGrafico = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+                datasets: [{
+                    label: 'Doações (em R$)',
+                    data: [1200, 1900, 3000, 5000, 2000, 3000],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
