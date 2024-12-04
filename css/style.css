@@ -16,19 +16,6 @@
 
 
 /*** Common CSS Start ***/
-.back-to-top {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    display: flex;
-    width: 45px;
-    height: 45px;
-    align-items: center;
-    justify-content: center;
-    transition: 0.5s;
-    z-index: 99;
-}
-
 h1,
 h2,
 h3,
@@ -58,14 +45,12 @@ h6,
 .display-2,
 .display-3,
 .display-4,
-.display-5,
-.display-6 {
+.display-5 {
     font-weight: 700;
     font-family: 'Fredoka', sans-serif;
 }
 
-.display-5,
-.display-6 {
+.display-5 {
     font-weight: 600;
     text-align: justify; /* Justifica o texto */
 }
@@ -73,13 +58,6 @@ h6,
 .wow,
 .animated {
     animation-duration: 2s !important;
-}
-
-.projeto-numbers-bg {
-    background: url('img\Caritate_5.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 50px 0;
-    color: white; /* Garantir que o texto seja legível sobre a imagem */
 }
 
 .number-box h2 {
@@ -115,7 +93,13 @@ h6,
     opacity: 1; /* Torna o botão visível quando a classe 'show' for adicionada */
 }
 
+.img-border-radius {
+    border-radius: 50% 20% / 10% 40%;
+}
 
+.title-border-radius {
+    border-radius: 10% 30%;
+}
 /*** Common CSS End ***/
 
 
@@ -125,30 +109,9 @@ h6,
     transition: .5s;
 }
 
-.btn-square {
-    width: 32px;
-    height: 32px;
-}
-
 .btn-sm-square {
     width: 34px;
     height: 34px;
-}
-
-.btn-md-square {
-    width: 44px;
-    height: 44px;
-}
-
-.btn-lg-square {
-    width: 56px;
-    height: 56px;
-}
-
-.btn-square,
-.btn-sm-square,
-.btn-md-square,
-.btn-lg-square {
     padding: 0;
     display: flex;
     align-items: center;
@@ -170,13 +133,6 @@ h6,
     border-radius: 25% 10%;
 }
 
-.img-border-radius {
-    border-radius: 50% 20% / 10% 40%;
-}
-
-.title-border-radius {
-    border-radius: 10% 30%;
-}
 /*** Button End ***/
 
 
@@ -290,9 +246,6 @@ h6,
     opacity: 1;
 }
 
-#searchModal .modal-content {
-    background: rgba(255, 255, 255, .8);
-}
 /*** Navbar End ***/
 
 
@@ -327,28 +280,6 @@ h6,
     font-weight: 500;
 }
 
-@media (max-width: 768px) {
-    .number-box h2 {
-        font-size: 30px;
-    }
-}
-
-
-
-@keyframes pulse-border {
-    0% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-        opacity: 0;
-    }
-}
-
-
-
 .about {
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
     background-position: center center;
@@ -358,7 +289,7 @@ h6,
 
 /* Estilos para a imagem de fundo na seção "Números do Projeto" */
 .projeto-numbers-bg {
-    background: url("img/Casas_3.jpg") no-repeat center center;
+    color: white; /* Garantir que o texto seja legível sobre a imagem */
     background-size: cover; /* Garante que a imagem cubra toda a área */
     padding: 50px 0; /* Adiciona um espaçamento ao redor do conteúdo */
 }
@@ -425,22 +356,12 @@ h6,
     background: linear-gradient(rgba(255, 72, 128, 0.1), rgba(255, 72, 128, 0.1));
 }
 
-.program .program-item .program-img .program-rate {
-    position: absolute;
-    width: 100px; 
-    top: -20px; 
-    left: 50%; 
-    margin-left: -50px; 
-    border-radius: 10% / 50%;
-}
-
 .program .program-item .program-text {
     padding-top: 150px; 
     margin-top: -125px;
 }
 
 .program .program-item .program-img img,
-.program .program-item .program-teacher img,
 .program .program-item:hover .program-text-inner a.h4 {
     transition: 0.5s;
 }
@@ -449,159 +370,6 @@ h6,
     color: var(--bs-primary) !important;
 }
 /*** Programs End ***/
-
-
-/*** Events Start ***/
-.events .events-item {
-    width: 100%;
-    height: 100%;
-    border-radius: 30%;
-    position: relative;
-}
-
-.events .events-item .events-inner .events-rate {
-    position: absolute;
-    width: 120px; 
-    top: -20px; 
-    left: 50%; 
-    margin-left: -60px; 
-    border-radius: 10% / 50%;
-}
-
-.events .events-item .events-inner .events-img .event-overlay {
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.5s;
-    z-index: 1;
-    opacity: 0;
-}
-
-.events .events-item .events-inner .events-img:hover .event-overlay {
-    opacity: 1;
-}
-
-.events .events-item .events-img::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
-    bottom: auto;
-    background: rgba(77, 101, 249, .7);
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-.events .events-item:hover .events-img::after {
-    height: 100%;
-    opacity: 1;
-}
-
-.events .events-item .events-text a.h4,
-.events .events-item .events-img img {
-    transition: 0.5s;
-}
-
-.events .events-item:hover .events-text a.h4 {
-    color: var(--bs-primary) !important;
-}
-
-.events .events-item:hover .events-img img {
-    transform: scale(1.3);
-}
-/*** Events End ***/
-
-
-/*** Blog Start ***/
-.blog .blog-item .blog-img::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
-    bottom: auto;
-    background: rgba(77, 101, 249, .7);
-    border-radius: 10px 10px 0 0;
-    transition: 0.5s;
-}
-
-.blog .blog-item:hover .blog-img::after {
-    height: 100%;
-    opacity: 1;
-}
-
-.blog .blog-item .blog-date-comments {
-    padding-top: 150px !important; 
-    margin-top: -125px;
-}
-
-.blog .blog-item .blog-img img,
-.blog .blog-item .blog-content img,
-.blog .blog-item .blog-text-inner a.h4 {
-    transition: 0.5s;
-}
-
-.blog .blog-item:hover .blog-img img {
-    transform: scale(1.3);
-}
-
-.blog .blog-item:hover .blog-content img {
-    transform: scale(1.3);
-}
-
-.blog .blog-item:hover .blog-text-inner a.h4 {
-    color: var(--bs-primary);
-}
-/*** Blog End ***/
-
-
-
-/*** Team Start ***/
-.team .team-item {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.team .team-item .team-icon {
-    position: absolute;
-    bottom: 120px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.team .team-item .team-icon a.share-link {
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.team .team-item:hover .team-icon a.share-link {
-    opacity: 1;
-}
-
-.team .team-item .team-content,
-.team .team-item .team-content h4,
-.team .team-item .team-content p {
-    transition: 0.5s;
-}
-
-.team .team-item:hover .team-content {
-    background: var(--bs-primary) !important;
-    border-radius: 0 0 10px 10px;
-}
-
-.team .team-item:hover .team-content h4 {
-    color: var(--bs-white) !important;
-}
-
-.team .team-item:hover .team-content p {
-    color: var(--bs-dark) !important;
-}
-/*** Team end ***/
 
 
 /*** testimonial Start ***/
@@ -658,17 +426,6 @@ h6,
 /*** Footer Start ***/
 .footer {
     background: linear-gradient(rgba(232, 141, 168, 0.05), rgba(255, 72, 128, 0.2));
-}
-
-.footer .footer-galary-img img {
-    width: 100%;
-    border-style: dotted; 
-    border-color: var(--bs-primary);
-    transition: 0.5s;
-}
-
-.footer .footer-galary-img img:hover {
-    transform: scale(1.2);
 }
 
 .footer-item a.text-body:hover {
