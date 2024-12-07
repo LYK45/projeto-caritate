@@ -1,0 +1,776 @@
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 15px 0;
+    text-align: left;
+    bottom: 0;
+    width: 100%;
+}
+
+.login-card {
+    background-color: #f8f9fa;
+    margin-bottom: 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 10px;
+}
+
+.login-card .card-header {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.login-card .btn-primary {
+    background-color: #37ac52;
+    border-color: #ffffff;
+}
+
+.login-card .btn-primary:hover {
+    background-color: #086e20;
+    border-color: #050505;
+    color: #ffffff;
+}
+
+.login-card-header {
+    background-color: #37ac52 !important;
+}
+
+.login-card-header .card-title {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+#footer {
+    width: 100%;
+    height: 400px;
+    padding: 45px;
+    background-color: rgba(194, 211, 212, 0.4);
+}
+
+#footer h1 {
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+    color: #272424;
+    letter-spacing: 0;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content h2 {
+    color: #585A56;
+    font-size: 13px;
+    letter-spacing: 0;
+    text-align: justify;
+    width: 438px;
+    margin-right: 126px;
+}
+
+.perguntas {
+    display: flex;
+    flex-direction: column;
+    margin-right: 126px;
+}
+
+.perguntas h1 {
+    color: #272424 !important;
+    font-size: 18px !important;
+    margin-bottom: 17px !important;
+}
+
+.perguntas a {
+    color: #585A56 !important;
+    font-size: 14px !important; 
+    cursor: pointer !important;
+    margin-bottom: 17px !important;
+    text-decoration: underline !important;
+}
+
+.redes h2 {
+   font-size: 18px !important;
+   color: #272424 !important;
+   margin-bottom: 20px !important;
+}
+
+/*** Spinner Start ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+ }
+
+ #spinner.show {
+     transition: opacity .8s ease-out, visibility 0s linear .0s;
+     visibility: visible;
+     opacity: 1;
+ }
+/*** Spinner End ***/
+
+
+/*** Common CSS Start ***/
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4,
+.h4 {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h5,
+h6,
+.h5,
+.h6 {
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify; /* Justifica o texto */
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+    font-weight: 700;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.display-5,
+.display-6 {
+    font-weight: 600;
+    text-align: justify; /* Justifica o texto */
+}
+
+.wow,
+.animated {
+    animation-duration: 2s !important;
+}
+
+.projeto-numbers-bg {
+    background: url('img\Caritate_5.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+    color: white; /* Garantir que o texto seja legível sobre a imagem */
+}
+
+.number-box h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    }
+
+/* Estilo para o botão de voltar ao topo */
+.back-to-top {
+    position: fixed;
+    bottom: 30px; /* Distância do fundo da página */
+    left: 30px; /* Distância da borda esquerda da página */
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 72, 128, 1); /* Cor de fundo do botão */
+    color: white; /* Cor do ícone */
+    border-radius: 50%; /* Deixa o botão redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; /* Tamanho do ícone */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Transição suave */
+    z-index: 99; /* Fica acima de outros elementos */
+}
+
+.back-to-top:hover {
+    background-color: rgb(249, 252, 211); /* Cor quando o mouse passar sobre o botão */
+}
+
+.back-to-top.show {
+    opacity: 1; /* Torna o botão visível quando a classe 'show' for adicionada */
+}
+
+
+/*** Common CSS End ***/
+
+
+/*** Button Start ***/
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-sm-square {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-md-square {
+    width: 44px;
+    height: 44px;
+}
+
+.btn-lg-square {
+    width: 56px;
+    height: 56px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.btn.btn-primary {
+    border: 0;
+    color: var(--bs-white);
+}
+
+.btn.btn-primary:hover {
+    background: rgb(249, 252, 211);
+    color: var(--bs-primary);
+}
+
+.btn-border-radius {
+    border-radius: 25% 10%;
+}
+
+.img-border-radius {
+    border-radius: 50% 20% / 10% 40%;
+}
+
+.title-border-radius {
+    border-radius: 10% 30%;
+}
+/*** Button End ***/
+
+
+/*** Topbar Start ***/
+.topbar .top-info {
+    font-size: medium;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar .top-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar .top-link a {
+    margin-right: 10px;
+}
+
+.topbar .top-link a:hover {
+    background: var(--bs-secondary) !important;
+}
+
+.topbar .top-link a:hover i {
+    color: var(--bs-primary) !important;
+}
+/*** Topbar End ***/
+
+
+/*** Navbar Start ***/
+.navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+/* Ajuste para aumentar o tamanho da fonte e reduzir o espaçamento */
+.navbar .navbar-nav .nav-link {
+    padding: 8px 10px; /* Diminuindo o padding para aproximar os links */
+    font-size: 18px; /* Aumentando o tamanho da fonte */
+    font-weight: 600;
+    transition: .5s;
+    margin-left: -20px; /* Reduzindo o espaço à esquerda do primeiro link */
+}
+
+.navbar-brand {
+    margin-right: -35px; /* Aproximando a logo dos links */
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.fixed-top.bg-white .navbar .navbar-nav .nav-link:hover,
+.fixed-top.bg-white .navbar .navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (min-width: 1200px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        font-weight: 400;
+        font-family: 'Fredoka', sans-serif;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        border: 0;
+        transition: .5s;
+        opacity: 0;
+    }
+}
+
+.paragraph {
+    display: grid;
+    grid-template-columns: 1fr; /* Uma única coluna para telas menores */
+    gap: 40px;
+    justify-content: center; /* Centraliza a imagem e o texto */
+}
+
+@media (min-width: 1000px) {
+    .paragraph {
+        grid-template-columns: 40% 60%;
+        justify-content: left;
+    }
+    .image-column {
+        align-content: center; /* Mantém o alinhamento vertical da imagem */
+    }
+}
+
+.dropdown .dropdown-menu a:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-primary);
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    background: var(--bs-light) !important;
+    border-radius: 10px !important;
+    transition: .5s;
+    opacity: 1;
+}
+
+#searchModal .modal-content {
+    background: rgba(255, 255, 255, .8);
+}
+/*** Navbar End ***/
+
+
+/*** Hero Header ***/
+.hero-header,
+.page-header {
+    background: url(../Src/img/Caritate.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 10%, rgba(255, 192, 203, 0.5) 30%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*** Hero Header ***/
+
+
+/*** About Start ***/
+
+/*** Section for Numbers ***/
+.number-box {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.number-box h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ff4081; /* Você pode mudar a cor para combinar com o seu tema */
+}
+
+.number-box p {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .number-box h2 {
+        font-size: 30px;
+    }
+}
+
+
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+
+.about {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilos para a imagem de fundo na seção "Números do Projeto" */
+.projeto-numbers-bg {
+    background: url("img/Casas_3.jpg") no-repeat center center;
+    background-size: cover; /* Garante que a imagem cubra toda a área */
+    padding: 50px 0; /* Adiciona um espaçamento ao redor do conteúdo */
+}
+
+/*** About End ***/
+
+
+/*** service Start ***/
+.service {
+    background: linear-gradient(rgba(255, 72, 128, 0.05), rgba(255, 72, 128, 0.2));
+}
+
+.service .service-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .1);
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 72, 128, 1); /* Cor rosa inicial */
+    border-radius:10% 40% / 10% 40%;
+    transition: 0.5s;
+    position: relative;
+}
+
+.service-content::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border-radius: 50% 20% / 10% 40%;
+    text-align: justify; /* Justifica o texto */
+    transition: .5s;
+    z-index: 1; /* Z-index abaixo do texto */
+}
+
+.service-item .service-content .service-content-inner {
+    position: relative;
+    z-index: 2; /* Z-index acima do fundo */
+}
+
+.service-item .service-content-inner i,
+.service-item .service-content-inner p,
+.service-item .service-content-inner a.h4 {
+    transition: color 0.5s;
+    text-align: justify; /* Justifica o texto */
+    z-index: 3; /* Garantindo que o texto fique acima */
+}
+
+.service-item:hover .service-content-inner i,
+.service-item:hover .service-content-inner p {
+    color: inherit !important;
+}
+
+.service-item:hover .service-content-inner a.h4 {
+    color: inherit !important;
+}
+
+/*** Service End ***/
+
+
+/*** Programs Start ***/
+.program {
+    background: linear-gradient(rgba(255, 72, 128, 0.1), rgba(255, 72, 128, 0.1));
+}
+
+.program .program-item .program-img .program-rate {
+    position: absolute;
+    width: 100px; 
+    top: -20px; 
+    left: 50%; 
+    margin-left: -50px; 
+    border-radius: 10% / 50%;
+}
+
+.program .program-item .program-text {
+    padding-top: 150px; 
+    margin-top: -125px;
+}
+
+.program .program-item .program-img img,
+.program .program-item .program-teacher img,
+.program .program-item:hover .program-text-inner a.h4 {
+    transition: 0.5s;
+}
+
+.program .program-item:hover .program-text-inner a.h4 {
+    color: var(--bs-primary) !important;
+}
+/*** Programs End ***/
+
+
+/*** Events Start ***/
+.events .events-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+    position: relative;
+}
+
+.events .events-item .events-inner .events-rate {
+    position: absolute;
+    width: 120px; 
+    top: -20px; 
+    left: 50%; 
+    margin-left: -60px; 
+    border-radius: 10% / 50%;
+}
+
+.events .events-item .events-inner .events-img .event-overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    z-index: 1;
+    opacity: 0;
+}
+
+.events .events-item .events-inner .events-img:hover .event-overlay {
+    opacity: 1;
+}
+
+.events .events-item .events-img::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    background: rgba(77, 101, 249, .7);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.events .events-item:hover .events-img::after {
+    height: 100%;
+    opacity: 1;
+}
+
+.events .events-item .events-text a.h4,
+.events .events-item .events-img img {
+    transition: 0.5s;
+}
+
+.events .events-item:hover .events-text a.h4 {
+    color: var(--bs-primary) !important;
+}
+
+.events .events-item:hover .events-img img {
+    transform: scale(1.3);
+}
+/*** Events End ***/
+
+
+/*** Blog Start ***/
+.blog .blog-item .blog-img::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    background: rgba(77, 101, 249, .7);
+    border-radius: 10px 10px 0 0;
+    transition: 0.5s;
+}
+
+.blog .blog-item:hover .blog-img::after {
+    height: 100%;
+    opacity: 1;
+}
+
+.blog .blog-item .blog-date-comments {
+    padding-top: 150px !important; 
+    margin-top: -125px;
+}
+
+.blog .blog-item .blog-img img,
+.blog .blog-item .blog-content img,
+.blog .blog-item .blog-text-inner a.h4 {
+    transition: 0.5s;
+}
+
+.blog .blog-item:hover .blog-img img {
+    transform: scale(1.3);
+}
+
+.blog .blog-item:hover .blog-content img {
+    transform: scale(1.3);
+}
+
+.blog .blog-item:hover .blog-text-inner a.h4 {
+    color: var(--bs-primary);
+}
+/*** Blog End ***/
+
+
+
+/*** Team Start ***/
+.team .team-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.team .team-item .team-icon {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team .team-item .team-icon a.share-link {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.team .team-item:hover .team-icon a.share-link {
+    opacity: 1;
+}
+
+.team .team-item .team-content,
+.team .team-item .team-content h4,
+.team .team-item .team-content p {
+    transition: 0.5s;
+}
+
+.team .team-item:hover .team-content {
+    background: var(--bs-primary) !important;
+    border-radius: 0 0 10px 10px;
+}
+
+.team .team-item:hover .team-content h4 {
+    color: var(--bs-white) !important;
+}
+
+.team .team-item:hover .team-content p {
+    color: var(--bs-dark) !important;
+}
+/*** Team end ***/
+
+
+/*** testimonial Start ***/
+.testimonial .testimonial-carousel {
+    position: relative;
+    
+}
+
+.testimonial .testimonial-carousel .owl-dots {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial .testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: var(--bs-primary);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.testimonial .testimonial-carousel .owl-dot.active {
+    width: 30px;
+    background: var(--bs-secondary);
+}
+/*** testimonial End ***/
+
+/*** Botão de Whatsapp***/
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+    }
+
+    .fa-whatsapp {
+    margin-top: 16px;
+    }
+/*** Botão de Whatsapp***/
+
+/*** Footer Start ***/
+.footer {
+    background: linear-gradient(rgba(232, 141, 168, 0.05), rgba(255, 72, 128, 0.2));
+}
+
+.footer .footer-galary-img img {
+    width: 100%;
+    border-style: dotted; 
+    border-color: var(--bs-primary);
+    transition: 0.5s;
+}
+
+.footer .footer-galary-img img:hover {
+    transform: scale(1.2);
+}
+
+.footer-item a.text-body:hover {
+    color: var(--bs-secondary) !important;
+}
+/*** Footer End ***/

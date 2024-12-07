@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Projeto Caritate</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Link para o Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="style.css" rel="stylesheet">
+
+        <style>
+            .paragraph {
+            display: grid;
+            grid-template-columns: 1fr; /* Adjust column widths as needed */
+            gap: 40px; /* Adjust gap between columns */
+            text-align: left;
+        }
+
+        @media (min-width: 1000px) {
+            .paragraph {
+                display: grid;
+                grid-template-columns: 1fr 2fr; /* Adjust column widths as needed */
+                gap: 40px; /* Adjust gap between columns */
+                text-align: center;
+            }
+            .image-column {
+                text-align: center;
+                padding-bottom: 40px;         
+            }
+            .novoParagraph {
+                display: grid;
+                grid-template-columns: 2fr 1fr; /* Adjust column widths as needed */
+                gap: 40px; /* Adjust gap between columns */
+                text-align: center;
+            }
+        }
+
+        .image-column {
+            padding-bottom: 40px;
+        }
+
+        img {
+            width: 100%; /* Make image responsive */
+            border-radius: 50% 20% / 10% 40%;
+        }
+        </style>
+
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid border-bottom wow fadeIn" data-wow-delay="0.1s">
+            <div class="container topbar bg-primary d-none d-lg-block py-2" style="border-radius: 0 40px; padding: 5px 0; margin-bottom: -10px;">
+                <div class="d-flex justify-content-between">
+                    <div class="top-info ps-2">
+                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> 
+                            <a href="#" class="text-white">Belo Horizonte, MG</a>
+                        </small>
+                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i>
+                            <a href="#" class="text-white">voluntarios@caritatebh.com</a>
+                        </small>
+                    </div>
+                    <div class="top-link pe-2">
+                        <a href="https://www.facebook.com/CaritateBH?locale=pt_BR" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-secondary"></i></a>
+                        <a href="https://youtube.com/@caritatebh?si=PJOVv3OcGLdS1CNp" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-youtube text-secondary"></i></a>
+                        <a href="https://www.instagram.com/caritatebh/" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-instagram text-secondary"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-0">
+                <nav class="navbar navbar-light navbar-expand-xl py-3" style="padding: 5px 0;">
+                    <a href="index.html" class="navbar-brand" style="margin-right: 5px;">
+                        <img src="img/caritate-logo.jpg" style="height: 100px;">
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.html" class="nav-item nav-link active" style="margin-left: 0;">Home</a>
+                            <a href="sobre.html" class="nav-item nav-link" style="margin: 0 8px;">Sobre Nós</a>
+                            <a href="sejavoluntario.html" class="nav-item nav-link" style="margin: 0 8px;">Seja Voluntário</a>
+                            <div class="nav-item dropdown" style="margin: 0 8px;">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Serviços</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="hospital.html" class="dropdown-item">Hospital</a>
+                                    <a href="casas.html" class="dropdown-item">Casas</a>
+                                    <a href="campanhas.html" class="dropdown-item">Campanhas</a>
+                                </div>
+                            </div>
+                            <a href="contato.html" class="nav-item nav-link" style="margin: 0 8px;">Contato</a>
+                            <a href="doacoes.html" class="nav-item nav-link" style="margin: 0 8px;">Doação</a>
+                        </div>
+                        <ul class="navbar-nav mb-2 mb-lg-0 ml-auto" id="userNav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/login">Entre/Cadastre-se</a>
+                            </li>
+                        </ul>                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+        
+        <!-- Page Header Start -->
+        <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container text-center py-5">
+                <h1 class="display-2 text-white mb-4">Serviços</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="servicos.html">Páginas</a></li>
+                        <li class="breadcrumb-item text-white" aria-current="page">Serviços</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+
+         <!-- Service Start -->
+        <div class="container-fluid service py-5">
+            <div class="container py-5">
+                <div class="col-md-6 col-lg-12 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="text-center border-primary border rounded bg-white service-item">
+                        <div class="service-content-inner p-5">
+                            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 1200px;">
+                                <h1 class="mb-5 display-3">Campanhas de Doação</h1>
+                            </div>
+                            <div class="paragraph">    
+                                <div class="image-column">
+                                    <img src="img/Comunidade.jpg" class="d-flex w-100" alt="Image">
+                                </div>
+                                <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Um pouco sobre</h4>
+                                    <h5>
+                                        É a ação de pessoas que dedicam seu tempo e esforço para coletar alimentos não perecíveis, produtos de higiene pessoal e outros itens essenciais, com o objetivo de distribuí-los para comunidades carentes, lares de idosos e creches. Essa prática visa garantir a segurança alimentar, fortalecer e unir as pessoas, principalmente no ato de protejer aqueles que estão mais à mercê de maiores problemas.
+                                    </h5>
+                                </div>  
+                            </div>  
+                            <div class="col-lg-12 text-md-start wow fadeIn" data-wow-delay="0.3s">
+                                <h5>
+                                    Organizamos campanhas de arrecadação de alimentos, roupas e brinquedos, além de itens de higiene e saúde, destinados a pessoas em situação de vulnerabilidade. Com a ajuda de nossos voluntários, distribuímos esses recursos, levando alívio e dignidade para quem mais precisa.
+                                </h5>
+                            </div>
+                            <div class="novoParagraph" style="padding-top: 10px;" >
+                                <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Benefícios</h4>
+                                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Ao doar alimentos, você está ajudando a combater a fome e a insegurança alimentar.</h6>
+                                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>O voluntariado fortalece os laços comunitários, ajuda as famílias mais carentes e promove a solidariedade.</h6>
+                                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>O voluntariado promove ações sociais de ajuda aos que, infelizmente estão à mercê da solidão e ao desalento.</h6>
+                                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Ao doar, você também proteje e ajuda aqueles que, por conta de fatores e problemas piores são mais dependentes da constância de tais ações.</h6>
+                                </div>  
+                                <div class="image-column">
+                                    <img src="img/Comunidade_3.jpg" class="d-flex w-100" alt="Image">
+                                </div>
+                            </div>                      
+                            <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
+                                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Grupos parceiros:</h4>
+                            </div>
+                            <div class="row mb-4 text-center">
+                                <div class="col-lg-6">
+                                    <p class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Grupo Afago </p>
+                                    <p class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Ser Tião de Minas</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Meu Meio</p>
+                                    <p class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Projeto Lopez</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
+            <!-- Remove the container if you want to extend the Footer to full width. -->
+<!-- Remove the container if you want to extend the Footer to full width. -->
+                <!-- Footer -->
+            <footer class="text-center text-pink">
+                <!-- Grid container -->
+                <div class="container">
+                    <!-- Section: Links -->
+                    <section class="mt-5">
+                    <!-- Grid row-->
+                    <div class="row text-center d-flex justify-content-center pt-5">
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="index.html" class="text-pink">Home</a>
+                        </h6>
+                        </div>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="sobre.html" class="text-pink">Sobre Nós</a>
+                        </h6>
+                        </div>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="sejavoluntario.html" class="text-pink">Seja Voluntário</a>
+                        </h6>
+                        </div>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="servicos.html" class="text-pink">Serviços</a>
+                        </h6>
+                        </div>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="contato.html" class="text-pink">Contato</a>
+                        </h6>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row-->
+                    </section>
+                    <!-- Section: Links -->
+            
+                    <hr class="my-5" />
+            
+                    <!-- Section: Text -->
+                    <section class="mb-5">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-8">
+                            <p>
+                                A Caritate BH tem como missão transformar a realidade de pessoas em vulnerabilidade social, promovendo a qualidade de vida e o bem-estar através de ações de solidariedade e apoio integral.
+                            </p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Section: Text -->
+            
+                    <!-- Section: Social -->
+                    <section class="text-center mb-5">
+                        <a href="https://www.instagram.com/caritatebh/" class="text-pink me-4">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/CaritateBH?locale=pt_BR" class="text-pink me-4">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com/@caritatebh?si=PJOVv3OcGLdS1CNp" class="text-pink me-4">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </section>
+                    <!-- Section: Social -->
+                </div>
+                <!-- Grid container -->
+            </footer>
+                <!-- Footer -->
+        </div>            
+            
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Projeto Caritate</a>, Todos Direitos Reservados.</span>
+                    </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a clas="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Botão de Whatsapp -->
+        <a class="whatsapp-link"  href="https://web.whatsapp.com/send?phone=55031992580770" class="btn btn-light btn-sm-square rounded-circle me-0" target="_blank"><i class="fab fa-whatsapp"></i>
+        </a>
+        
+ <!-- Botão que Sobe a Página Inicio -->
+ <a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i> <!-- Ícone da seta -->
+</a>
+<!-- Botão que Sobe a Página Fim -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="script.js"></script>
+    </body>
+
+</html>
