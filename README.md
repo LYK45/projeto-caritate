@@ -1,19 +1,36 @@
-# Projeto Caritate!
+## Projeto Caritate BH!
 
-#### Github temporário para começarmos os trabalhos até o professor criar o oficial!
 
-| Etapa         | Atividades |
-|  :----:   | ----------- |
-| ETAPA 2         |[Requisitos](doc.md) |
+**Descrição:**
 
-## Galera, segue o material para pesquisarem e se informarem melhor na hora da contrução das páginas:
+Este projeto tem como objetivo trazer maior visualização para o projeto Caritate BH. Através de uma interface intuitiva, os usuários podem se informar melhor sobre o projeto e suas atividades, buscar por oportunidades de voluntariado, realizar doações e se inscrever para participar de projetos. 
+
+**Tecnologias:**
+
+#### HTML, CSS e Javascript
+#### JQuery, Bootstrap
+#### Banco de Dados => JSON
+
+**Funcionalidades:**
+
+* Criação de perfil de voluntário e organização
+* Informações sobre os trabalhos
+* Inscrição em projetos
+* Comunicação entre voluntários e organizações
+* Página com doações
+
+**Público-alvo:**
+
+Voluntários, organizações sociais e empresas que desejam promover a cultura do voluntariado.
+
+**Próximos passos:**
+
+* Desenvolvimento da página de notícias
+* Integração com redes sociais
+* Desenvolvimento da página de notícias
+
+## Informações adicionais sobre a Caritate: 
 
 #### Instagram: [@caritatebh](https://www.instagram.com/caritatebh?igsh=MWFsMnoxaWx4OWxqOQ==)
-#### Formulário para virar voluntário: [https://forms.gle/LU1XhQojB77sKzZN7](https://forms.gle/LU1XhQojB77sKzZN7)
-#### Website a ser modificado: [https://themewagon.github.io/BabyCare/index.html](https://themewagon.com/themes/babycare/)
-#### Website que ela achou interessante e pode servir de inspiração: https://manodown.com.br/
-#### Cartilha com informações:
-[MANUAL DO VOLUNTARIADO.pdf](https://github.com/user-attachments/files/16981940/MANUAL.DO.VOLUNTARIADO.pdf)
 
 
-### PS: Por favor, se for possível não se apoiem somente à essas informações, tentem até pesquisar um pouco mais, acho que até o Facebook deles também, por exemplo.
