@@ -85,14 +85,6 @@ h6,
     z-index: 99; /* Fica acima de outros elementos */
 }
 
-.back-to-top:hover {
-    background-color: rgb(249, 252, 211); /* Cor quando o mouse passar sobre o botão */
-}
-
-.back-to-top.show {
-    opacity: 1; /* Torna o botão visível quando a classe 'show' for adicionada */
-}
-
 .img-border-radius {
     border-radius: 50% 20% / 10% 40%;
 }
@@ -232,11 +224,6 @@ h6,
     }
 }
 
-.dropdown .dropdown-menu a:hover {
-    background: var(--bs-secondary);
-    color: var(--bs-primary);
-}
-
 .navbar .nav-item:hover .dropdown-menu {
     transform: rotateX(0deg);
     visibility: visible;
@@ -361,14 +348,6 @@ h6,
     margin-top: -125px;
 }
 
-.program .program-item .program-img img,
-.program .program-item:hover .program-text-inner a.h4 {
-    transition: 0.5s;
-}
-
-.program .program-item:hover .program-text-inner a.h4 {
-    color: var(--bs-primary) !important;
-}
 /*** Programs End ***/
 
 
